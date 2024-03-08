@@ -1,6 +1,6 @@
 # Word File Data Manipulation and Export Project
 
-This project focuses on the development of a Python-based application that manipulates specific data within a Word document and exports it as a PDF. The application is designed to replace text while maintaining formatting, perform calculations within table columns, and integrate a user-friendly Streamlit dashboard for input handling.
+This project, I developed for [ZeroAndOne Developers](https://zodevelopers.com/) community, is aimed at efficiently manipulating specific data within a Word document and exporting it as a PDF. As a Software Development Associate at ZeroAndOne Developers, I've been tasked with completing this project to meet the requirements of our clients. The application is designed to replace text while maintaining formatting, perform calculations within table columns, and integrate a user-friendly Streamlit dashboard for input handling.
 
 ## Features
 
