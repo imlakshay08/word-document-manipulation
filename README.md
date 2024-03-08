@@ -38,27 +38,27 @@ streamlit run main.py
 
 ## Technical Details
 - **Python Libraries**:
- - streamlit: Used for creating the user-friendly dashboard.
- - python-docx: Utilized for manipulating Word documents.
- - comtypes: Employed for PDF export functionality.
+  - streamlit: Used for creating the user-friendly dashboard.
+  - python-docx: Utilized for manipulating Word documents.
+  - comtypes: Employed for PDF export functionality.
 
 - **Code Organization**:
- - main.py: Contains the main application code, including Streamlit dashboard setup, document manipulation, and PDF export functionality.
- - Template_for_word_replace.docx: Template Word document for data replacement.
- - requirements.txt: List of Python dependencies.
+  - main.py: Contains the main application code, including Streamlit dashboard setup, document manipulation, and PDF export functionality.
+  - Template_for_word_replace.docx: Template Word document for data replacement.
+  - requirements.txt: List of Python dependencies.
 
 ## Usage
 1. **Password Protection**:
- - Enter the password when prompted to access the application.
+  - Enter the password when prompted to access the application.
 2. **Streamlit Dashboard**:
- - Input Company Name, Address, and Factor in the provided fields.
- - Click on the "Generate Documents" button to initiate the document   modification process.
+  - Input Company Name, Address, and Factor in the provided fields.
+  - Click on the "Generate Documents" button to initiate the document   modification process.
 3. **Document Modification**:
- - The application replaces placeholders in the document with user-provided data.
- - It performs calculations within table columns based on the specified factor.
+  - The application replaces placeholders in the document with user-provided data.
+  - It performs calculations within table columns based on the specified factor.
 4. **PDF Export**:
- - The modified document is saved as modified_document.docx.
- - It is then converted to PDF format and saved as final.pdf.
+  - The modified document is saved as modified_document.docx.
+  - It is then converted to PDF format and saved as final.pdf.
 
 ## Support
 
