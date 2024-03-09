@@ -1,8 +1,6 @@
 import streamlit as st
 from docx import Document
-import comtypes.client
 import os
-import comtypes
 
 # Password protection
 password = st.secrets["password"]
@@ -16,11 +14,10 @@ if entered_password != password:
         st.error("Incorrect password. Please try again.")
     st.stop()
 
-# Initialize the COM library
-comtypes.CoInitialize()
 # Load the document
 doc_path = 'Template_for_word_replace.docx'
 doc = Document(doc_path)
+
 # Function to replace text while keeping formatting
 def replace_text_while_keeping_formatting(cell, search_text, replace_text):
     # First, extract all the runs in the cell's paragraphs
@@ -120,16 +117,8 @@ if st.button("Generate Documents"):
     doc.save('modified_document.docx')
 
     # Convert the modified document to PDF
-    def doc_to_pdf(doc_path, pdf_path):
-        word = comtypes.client.CreateObject('Word.Application')
-        word.Visible = False
-        doc = word.Documents.Open(doc_path)
-        doc.SaveAs(pdf_path, FileFormat=17)
-        doc.Close()
-        word.Quit()
-
-    doc_path = os.path.abspath('modified_document.docx')
     pdf_path = os.path.abspath('final.pdf')
-    doc_to_pdf(doc_path, pdf_path)
+    doc_path_abs = os.path.abspath('modified_document.docx')
+    os.system(f'libreoffice --headless --convert-to pdf {doc_path_abs} --outdir {os.path.dirname(pdf_path)}')
 
     st.success("Documents generated successfully!")
