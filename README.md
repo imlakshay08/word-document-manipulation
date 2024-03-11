@@ -67,6 +67,3 @@ For any issues or inquiries, please open an issue in the GitHub repository or co
 ## Contribution
 
 Contributions to the project are welcome! Feel free to open pull requests with improvements or additional features.
-
-## License
-This project is licensed under the MIT License.
